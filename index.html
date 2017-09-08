@@ -3,7 +3,25 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
+  <form action="#">
+    <ul>
+      <li><label for="github-username">GitHub Username</label></li>
+      <li><input type="text" id="github-username"></li>
+      <li><label for="github-token">GitHubToken</label></li>
+      <li><input type="text" id="github-token"></li>
+      <li><label for="gist-name">Gist Name</label></li>
+      <li><input type="text" id="gist-name"></li>
+      <li><label for="git-description">Gist Description</label></li>
+      <li><input type="text" id="gist-description"></li>
+      <li><label for="gist-content">Gist Content</label></li>
+      <li><textarea id="gist-content" cols="30" rows="10"></textarea></li>
+      <li><button id="gist-create">Submit</button></li>
+    </ul>
+  </form>
+  <div id="gist-display">
+    <h1>Gists</h1>
+    <ul></ul>
+  </div>
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/github_client.js"></script>
 </body>
